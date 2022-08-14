@@ -13,10 +13,5 @@ namespace SteamCMD_GUI2.ViewModels
         public string ButtonLeft => "Open Directory";
         public string ButtonRight => "Start Download";
         
-        [RelayCommand]
-        private void SayHello()
-        {
-           Status = "testing";
-        }
     }
 }

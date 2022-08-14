@@ -35,7 +35,7 @@
         <!-- Buttons -->
         <Grid Row="4" ColumnDefinitions="25,auto,*,auto,25">
             <Button Grid.Column="1" Content="{Binding ButtonLeft}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Button Grid.Column="3" Command="{Binding SayHello}" Content="{Binding ButtonRight}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="3" Content="{Binding ButtonRight}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </StackPanel>
 </Window>

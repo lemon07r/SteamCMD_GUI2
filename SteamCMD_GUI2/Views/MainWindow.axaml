@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:SteamCMD_GUI2.ViewModels"
+        Width="480" Height="250"
+        MaxWidth="640" MaxHeight="250" 
+        MinWidth="320" MinHeight="200"
+        x:Class="SteamCMD_GUI2.Views.MainWindow"
+        Icon="/Assets/steam_icon.ico"
+        Title="SteamCMD GUI 2 - Workshop Mod Downloader"
+        ExtendClientAreaToDecorationsHint="True"
+        >
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <StackPanel>
+        <!-- Title bar -->
+        <Grid Row="0" Height="30" ColumnDefinitions="Auto, *">
+            <Image Grid.Column="0" Margin="4" Width="32" Source="/Assets/steam_icon.ico"/>
+            <TextBlock Grid.Column="1" Margin="6" FontSize="12" Text="{Binding Title}" VerticalAlignment="Center"/>
+        </Grid>
+        <!-- Status -->
+        <Grid Row="1" ColumnDefinitions="28, Auto, 8, Auto">
+            <TextBlock Grid.Column="1" Text="{Binding Tool}" Padding="0,24" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="3" Text="{Binding Status}" VerticalAlignment="Center"/>
+        </Grid>
+        <!-- Progress bar -->
+        <Grid Row="2">
+            <ProgressBar Padding="10"></ProgressBar>
+        </Grid>
+        <!-- User prompt and input -->
+        <Grid Row="3">
+            <TextBlock Grid.Column="0" Text="{Binding Prompt}" Padding="36" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox Margin="28" VerticalContentAlignment="Center"/>
+        </Grid>
+        <!-- Buttons -->
+        <Grid Row="4" ColumnDefinitions="25,auto,*,auto,25">
+            <Button Grid.Column="1" Content="{Binding ButtonLeft}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="3" Command="{Binding SayHello}" Content="{Binding ButtonRight}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </StackPanel>
+</Window>

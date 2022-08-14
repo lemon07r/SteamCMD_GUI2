@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamCMD_GUI2", "SteamCMD_GUI2\SteamCMD_GUI2.csproj", "{12BD37E2-D45C-4A47-AB8B-D0F00B6FB989}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12BD37E2-D45C-4A47-AB8B-D0F00B6FB989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BD37E2-D45C-4A47-AB8B-D0F00B6FB989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BD37E2-D45C-4A47-AB8B-D0F00B6FB989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BD37E2-D45C-4A47-AB8B-D0F00B6FB989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

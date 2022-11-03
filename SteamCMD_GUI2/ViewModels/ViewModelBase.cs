@@ -1,8 +1,9 @@
-﻿using ReactiveUI;
+﻿using CommunityToolkit.Mvvm;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace SteamCMD_GUI2.ViewModels
 {
-    public class ViewModelBase : ReactiveObject
+    public class ViewModelBase : ObservableObject
     {
     }
 }

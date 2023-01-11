@@ -21,7 +21,7 @@
         <!-- Status -->
         <Grid Row="1" ColumnDefinitions="28, Auto, 8, Auto">
             <TextBlock Grid.Column="1" Text="{Binding Tool}" Padding="0,24" VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="3" Text="{Binding Status}" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="3" Text="{Binding Status, Mode=TwoWay}" VerticalAlignment="Center"/>
         </Grid>
         <!-- Progress bar -->
         <Grid Row="2">
@@ -34,8 +34,8 @@
         </Grid>
         <!-- Buttons -->
         <Grid Row="4" ColumnDefinitions="25,auto,*,auto,25">
-            <Button Grid.Column="1" Content="{Binding ButtonLeft}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Button Grid.Column="3" Content="{Binding ButtonRight}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="1" Click="open_Directory" Content="{Binding ButtonLeft}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="3" Click="start_Download" Content="{Binding ButtonRight}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </StackPanel>
 </Window>

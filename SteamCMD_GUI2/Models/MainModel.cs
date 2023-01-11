@@ -12,10 +12,11 @@ using System.IO;
 
 public class MainModel
 {
-    public static async Task Init()
+    public async Task Init()
     {
         try
         {
+        
             //Get the current directory and create SteamCMD directory if nonexistent 
             string curDir = Directory.GetCurrentDirectory();
             string steamCmdDir = curDir + @"\SteamCMD";
